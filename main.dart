@@ -1,9 +1,9 @@
 import 'dart:math';
 
 void main() {
-  String message = '111010011100'; // The message to be encrypted
-  List<int> key = [1, 0, 0, 1]; // The encryption key
-  List<int> seed = [0, 0, 1, 0]; // The seed for the linear feedback shift register
+  String message = '1110100111001100110011'; // The message to be encrypted
+  List<int> key = [1,1,0,1,1]; // The encryption key
+  List<int> seed = [1,1,1,1,1]; // The seed for the linear feedback shift register
   key.insert(0, 1); // Add an additional bit to the key
 
   // Create encryption and decryption ciphers using the same key and seed
